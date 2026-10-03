@@ -1,0 +1,72 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  validate:
+    name: Validation (PSScriptAnalyzer + Pester)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PSScriptAnalyzer
+        shell: pwsh
+        run: Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
+
+      - name: PSScriptAnalyzer
+        shell: pwsh
+        run: |
+          $results = Invoke-ScriptAnalyzer -Path SecureMover.ps1,SecureMover-GUI.ps1 -Severity Error,Warning
+          if ($results) {
+            $results | Format-List
+            Write-Error "PSScriptAnalyzer found $($results.Count) issue(s)"
+            exit 1
+          }
+
+      - name: Install Pester
+        shell: pwsh
+        run: Install-Module -Name Pester -Force -Scope CurrentUser -MinimumVersion 5.0.0
+
+      - name: Pester
+        shell: pwsh
+        run: Invoke-Pester -Path tests/ -CI
+
+  build:
+    name: Build et publication
+    needs: validate
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Préparer le package
+        shell: pwsh
+        run: |
+          $version = $env:GITHUB_REF_NAME
+          New-Item -ItemType Directory -Path package | Out-Null
+          Copy-Item SecureMover.ps1,SecureMover-GUI.ps1,Lancer-GUI.bat,README.md,README.en.md,LICENSE,CHANGELOG.md,VERSION.txt package/
+          Copy-Item docs package/docs -Recurse
+          Compress-Archive -Path package/* -DestinationPath "SecureMover-$version.zip"
+          (Get-FileHash "SecureMover-$version.zip" -Algorithm SHA256).Hash | Out-File "SecureMover-$version.zip.sha256" -NoNewline
+
+      - name: Notes de release depuis le CHANGELOG
+        shell: pwsh
+        run: |
+          $tag = $env:GITHUB_REF_NAME -replace '^v',''
+          $changelog = Get-Content CHANGELOG.md -Raw
+          $notes = ""
+          if ($changelog -match "(?s)## \[$tag\][^\n]*\n(.*?)(?=\n## \[|\z)") { $notes = $Matches[1].Trim() }
+          if (-not $notes) { $notes = "Release $env:GITHUB_REF_NAME" }
+          $notes | Out-File release-notes.md -Encoding utf8
+
+      - name: Créer la release GitHub
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            SecureMover-*.zip
+            SecureMover-*.zip.sha256
+          body_path: release-notes.md
