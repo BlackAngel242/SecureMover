@@ -20,7 +20,7 @@ Nous nous engageons à créer une communauté accueillante et inclusive pour tou
 
 ## Application
 
-Les violations peuvent être signalées via les [Discussions GitHub](https://github.com/BlackAngel242/SecureMov2/discussions). Toutes les plaintes seront examinées et traitées de manière appropriée.
+Les violations peuvent être signalées via les [Discussions GitHub](https://github.com/BlackAngel242/SecureMover/discussions). Toutes les plaintes seront examinées et traitées de manière appropriée.
 
 ---
 

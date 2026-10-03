@@ -694,7 +694,7 @@ Puis planifier v2.1 avec :
 ---
 
 **Document Créé Par** : Lead Developer
-**Validé Par** : Bug Manager (Alex Chen)
+**Validé Par** : DrSmoke (mainteneur)
 **Date** : 2025-11-01
 **Version** : 1.0
 

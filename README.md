@@ -1,11 +1,14 @@
 # SecureMover
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue.svg)](https://docs.microsoft.com/en-us/powershell/)
-[![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg)](https://www.microsoft.com/windows)
-[![Version](https://img.shields.io/badge/Version-2.0-orange.svg)](https://github.com/BlackAngel242/SecureMov2/releases)
+[![Licence](https://img.shields.io/badge/Licence-MIT-green.svg)](LICENSE)
+[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue.svg)](https://learn.microsoft.com/powershell/)
+[![Plateforme](https://img.shields.io/badge/Plateforme-Windows-blue.svg)](https://www.microsoft.com/windows)
+[![Version](https://img.shields.io/badge/Version-2.0.2-orange.svg)](https://github.com/BlackAngel242/SecureMover/releases)
+[![CI](https://github.com/BlackAngel242/SecureMover/actions/workflows/ci.yml/badge.svg)](https://github.com/BlackAngel242/SecureMover/actions/workflows/ci.yml)
 
-Outil PowerShell pour déplacer, restaurer et sauvegarder les dossiers utilisateurs Windows vers une partition séparée — de manière sécurisée et réversible.
+🇬🇧 [English version](README.en.md)
+
+Outil PowerShell pour déplacer, restaurer et sauvegarder les dossiers utilisateurs Windows vers une partition séparée, de manière sécurisée et réversible.
 
 ---
 
@@ -16,6 +19,7 @@ Outil PowerShell pour déplacer, restaurer et sauvegarder les dossiers utilisate
 - [Prérequis](#prérequis)
 - [Installation](#installation)
 - [Utilisation](#utilisation)
+- [Interface graphique](#interface-graphique)
 - [Sécurité](#sécurité)
 - [Roadmap](#roadmap)
 - [Contribution](#contribution)
@@ -25,7 +29,7 @@ Outil PowerShell pour déplacer, restaurer et sauvegarder les dossiers utilisate
 
 ## Pourquoi SecureMover ?
 
-Quand Windows est sur C:, vos données personnelles y sont aussi. Un crash, une réinstallation, ou un disque saturé — et tout peut disparaître.
+Quand Windows est sur C:, vos données personnelles y sont aussi. Un crash, une réinstallation, ou un disque saturé, et tout peut disparaître.
 
 - **Isolation** : vos fichiers sont sur une partition distincte, protégés des réinstallations système
 - **Transparence** : Windows et vos applications ne voient aucune différence (registre mis à jour)
@@ -64,9 +68,9 @@ Quand Windows est sur C:, vos données personnelles y sont aussi. Un crash, une 
 
 ## Installation
 
-```bash
-git clone https://github.com/BlackAngel242/SecureMov2.git
-cd SecureMov2
+```powershell
+git clone https://github.com/BlackAngel242/SecureMover.git
+cd SecureMover
 ```
 
 Si PowerShell bloque l'exécution :
@@ -88,7 +92,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File `"$PWD\SecureMover.ps1`"" -Verb RunAs
 ```
 
-### Demo — Écran d'accueil
+### Écran d'accueil
 
 ```
 ╔═══════════════════════════════════════════════════════════════════╗
@@ -98,8 +102,8 @@ Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File `"$PWD\Sec
 ║   ___) |  __/ (__| |_| | | |  __/ |  | | (_) \ V /  __/ |      ║
 ║  |____/ \___|\___|\__,_|_|  \___|_|  |_|\___/ \_/ \___|_|      ║
 ║                                                                   ║
-║                      Version 2.0 Enhanced                        ║
-║          Deplacement securise des profils utilisateurs           ║
+║                      Version 2.0.2                               ║
+║          Déplacement sécurisé des profils utilisateurs           ║
 ╚═══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -108,20 +112,13 @@ Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File `"$PWD\Sec
 ```
 +==================== MENU PRINCIPAL ====================+
 |                                                        |
-|  [1] Deplacer un Profil Utilisateur                   |
+|  [1] Déplacer un Profil Utilisateur                   |
 |  [2] Restaurer un Profil Utilisateur                  |
-|  [3] Creer une sauvegarde d'un Profil                 |
+|  [3] Créer une sauvegarde d'un Profil                 |
 |  [4] Aide et Informations                             |
 |  [5] Quitter                                           |
 |                                                        |
 +========================================================+
-```
-
-### Barre de progression
-
-```
-[####################......] 75% | Traitement de Pictures...
-Operation terminee avec succes!
 ```
 
 ### Options
@@ -131,6 +128,17 @@ Operation terminee avec succes!
 | **[1] Déplacer** | Sélectionner un profil, choisir la partition cible, confirmer. Redémarrage requis. |
 | **[2] Restaurer** | Détection automatique des profils déplacés, remise en place + restauration registre. |
 | **[3] Sauvegarder** | Copie vers lecteur externe sans modifier le système. Idéal avant toute opération. |
+
+---
+
+## Interface graphique
+
+Une interface graphique est disponible pour un usage sans terminal :
+
+- Double-cliquez sur `Lancer-GUI.bat`, **ou**
+- Lancez `SecureMover-GUI.ps1` depuis PowerShell.
+
+Voir [docs/README_GUI.md](docs/README_GUI.md) pour le guide complet.
 
 ---
 
@@ -152,7 +160,7 @@ SecureMover_Backup_YYYYMMDD_HHMMSS.reg   # Sauvegarde registre (conserver 30 jou
 SecureMover.log                           # Journal des opérations
 ```
 
-> **Disclaimer** : Ce script modifie le registre Windows et déplace des fichiers. Des sauvegardes automatiques sont créées, mais l'auteur ne peut être tenu responsable de toute perte de données. Testez d'abord sur un profil non-critique.
+> **Avertissement** : ce script modifie le registre Windows et déplace des fichiers. Des sauvegardes automatiques sont créées, mais l'auteur ne peut être tenu responsable de toute perte de données. Testez d'abord sur un profil non critique.
 
 ---
 
@@ -160,19 +168,17 @@ SecureMover.log                           # Journal des opérations
 
 | Version | Statut | Fonctionnalités |
 |---------|--------|-----------------|
-| **2.0** | Stable | Interface FR/EN, restauration, sauvegarde, logging, animations |
+| **2.0** | Stable | Interface FR/EN, restauration, sauvegarde, logging |
 | **2.1** | En cours | Sélection de dossiers individuels, mode silencieux, multi-profils simultanés |
-| **3.0** | Planifié | GUI WPF, sauvegardes planifiées, compression, statistiques d'espace |
+| **3.0** | Planifié | Sauvegardes planifiées, compression, statistiques d'espace |
 
 ---
 
 ## Contribution
 
-Les contributions sont les bienvenues.
+Les contributions sont les bienvenues. Voir [CONTRIBUTING.md](docs/CONTRIBUTING.md) pour le guide complet.
 
-Voir [CONTRIBUTING.md](CONTRIBUTING.md) pour le guide complet.
-
-```bash
+```powershell
 git checkout -b feature/ma-fonctionnalite
 git commit -m "feat: description courte"
 git push origin feature/ma-fonctionnalite
@@ -181,7 +187,7 @@ git push origin feature/ma-fonctionnalite
 
 **Contributions acceptées** : corrections de bugs, nouvelles fonctionnalités, documentation, traductions, tests.
 
-Pour toute question ou signalement de bug : [GitHub Issues](https://github.com/BlackAngel242/SecureMov2/issues)
+Questions ou bugs : [GitHub Issues](https://github.com/BlackAngel242/SecureMover/issues)
 
 ---
 
@@ -193,7 +199,7 @@ Ce projet est sous licence **MIT** — voir [LICENSE](LICENSE).
 
 <div align="center">
 
-*"Protegez vos donnees, securisez votre avenir"*
+*« Protégez vos données, sécurisez votre avenir »*
 
 [Retour en haut](#securemover)
 

@@ -229,11 +229,7 @@ et ce projet respecte le [Versionnage Semantique](https://semver.org/lang/fr/).
 - Assistant IA (Co-Developpeur)
 
 **Equipe Virtuelle Consultee** :
-- Sophie Laurent (Product Manager)
-- Marc Dubois (Lead Developer)
-- Sarah Chen (QA Engineer)
-- Alex Martinez (Security Analyst)
-- Tom Wilson (DevOps Engineer)
+- DrSmoke (mainteneur), avec la collaboration de l'IA
 - Emma Rodriguez (Technical Writer)
 
 **Outils Utilises** :
@@ -248,8 +244,8 @@ et ce projet respecte le [Versionnage Semantique](https://semver.org/lang/fr/).
 
 ## Support & Contact
 
-- **Issues** : https://github.com/BlackAngel242/SecureMov2/issues
-- **Discussions** : https://github.com/BlackAngel242/SecureMov2/discussions
+- **Issues** : https://github.com/BlackAngel242/SecureMover/issues
+- **Discussions** : https://github.com/BlackAngel242/SecureMover/discussions
 
 ---
 

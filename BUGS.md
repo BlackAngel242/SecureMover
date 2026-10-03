@@ -1,6 +1,6 @@
 # Bug Tracker - SecureMover v2.0
 
-**Responsable** : Alex Chen (Bug Manager)
+**Responsable** : DrSmoke (mainteneur)
 **Date de Creation** : 2025-01-15
 **Derniere Mise a Jour** : 2025-11-01
 **Statut** : EN COURS DE RESOLUTION
@@ -25,7 +25,7 @@
 
 **Priorite** : P1 (MAJEUR)
 **Status** : RESOLU (v2.0.2 - 2025-11-01)
-**Reporter** : Sarah Chen (QA)
+**Reporter** : Équipe QA
 **Date** : 2025-01-15
 **Assigne a** : Lead Developer
 **Resolu par** : PATCH BUG-003 (v2.0.2)
@@ -63,7 +63,7 @@ $robocopyResult = robocopy $longPathSource $longPathDest /E /MOVE /NJH /NJS
 
 **Priorite** : P1 (MAJEUR)
 **Status** : CONNU
-**Reporter** : Sarah Chen (QA)
+**Reporter** : Équipe QA
 **Date** : 2025-01-15
 **Assigne a** : Lead Developer
 **ETA** : v2.1
@@ -295,7 +295,7 @@ function Move-UserProfile {
 
 **Priorite** : P2 (MOYEN)
 **Status** : IDENTIFIE
-**Reporter** : Sarah Chen (QA)
+**Reporter** : Équipe QA
 **Date** : 2025-01-15
 **Assigne a** : Lead Developer
 **ETA** : v2.1
@@ -699,6 +699,6 @@ Acceptable depuis PowerShell 5.0.
 
 ---
 
-**Responsable** : Alex Chen (Bug Manager)
+**Responsable** : DrSmoke (mainteneur)
 **Derniere Mise a Jour** : 2025-11-01 13:00:00 UTC
 **Prochaine Revue** : 2025-11-08 (après v2.0.2)
