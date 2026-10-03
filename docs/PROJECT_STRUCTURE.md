@@ -141,7 +141,7 @@ Start-Process powershell -ArgumentList "-File SecureMover.ps1" -Verb RunAs
 Contient les rapports internes de l'equipe virtuelle de developpement.
 
 #### PRODUCT_MANAGER_REPORT.md
-- **Auteur** : Sophie Laurent (PM virtuel)
+- **Auteur** : DrSmoke (mainteneur)
 - **Contenu** :
   - Vision produit
   - Roadmap v2.0 -> v3.0
@@ -153,7 +153,7 @@ Contient les rapports internes de l'equipe virtuelle de developpement.
 ---
 
 #### LEAD_DEVELOPER_REVIEW.md
-- **Auteur** : Marc Dubois (Lead Dev virtuel)
+- **Auteur** : DrSmoke (mainteneur)
 - **Contenu** :
   - Architecture technique
   - Revue de code detaillee
@@ -165,7 +165,7 @@ Contient les rapports internes de l'equipe virtuelle de developpement.
 ---
 
 #### QA_ENGINEER_REPORT.md
-- **Auteur** : Sarah Chen (QA virtuel)
+- **Auteur** : DrSmoke (mainteneur)
 - **Contenu** :
   - 147 cas de tests
   - Taux de reussite 98%
@@ -177,7 +177,7 @@ Contient les rapports internes de l'equipe virtuelle de developpement.
 ---
 
 #### SECURITY_ANALYST_REPORT.md
-- **Auteur** : Alex Martinez (Security virtuel)
+- **Auteur** : DrSmoke (mainteneur)
 - **Contenu** :
   - Analyse STRIDE
   - OWASP Top 10
@@ -189,7 +189,7 @@ Contient les rapports internes de l'equipe virtuelle de developpement.
 ---
 
 #### DEVOPS_ENGINEER_REPORT.md
-- **Auteur** : Tom Wilson (DevOps virtuel)
+- **Auteur** : DrSmoke (mainteneur)
 - **Contenu** :
   - Pipeline CI/CD propose
   - Strategies de deploiement
@@ -459,15 +459,15 @@ Lors de l'utilisation du script, les fichiers suivants sont crees :
 ### Auteur
 
 **DrSmoke** - "un mbokatier bien engage"
-- GitHub : https://github.com/DrSmoke
-- Email : [GitHub Issues](https://github.com/BlackAngel242/SecureMov2/issues)
+- GitHub : https://github.com/BlackAngel242
+- Email : [GitHub Issues](https://github.com/BlackAngel242/SecureMover/issues)
 
 ### Projet
 
-- **Repository** : https://github.com/BlackAngel242/SecureMov2
-- **Issues** : https://github.com/BlackAngel242/SecureMov2/issues
-- **Discussions** : https://github.com/BlackAngel242/SecureMov2/discussions
-- **Releases** : https://github.com/BlackAngel242/SecureMov2/releases
+- **Repository** : https://github.com/BlackAngel242/SecureMover
+- **Issues** : https://github.com/BlackAngel242/SecureMover/issues
+- **Discussions** : https://github.com/BlackAngel242/SecureMover/discussions
+- **Releases** : https://github.com/BlackAngel242/SecureMover/releases
 
 ---
 
@@ -475,11 +475,7 @@ Lors de l'utilisation du script, les fichiers suivants sont crees :
 
 ### Equipe Virtuelle
 
-- **Sophie Laurent** - Product Manager
-- **Marc Dubois** - Lead Developer
-- **Sarah Chen** - QA Engineer
-- **Alex Martinez** - Security Analyst
-- **Tom Wilson** - DevOps Engineer
+- **DrSmoke** - Mainteneur (avec la collaboration de l'IA)
 - **Emma Rodriguez** - Technical Writer
 
 ### Outils Utilises

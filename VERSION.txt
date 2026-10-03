@@ -119,10 +119,10 @@ Copyright (c) 2025 DrSmoke
 Liens Utiles
 ============
 
-GitHub          : https://github.com/DrSmoke/SecureMover
-Documentation   : https://github.com/DrSmoke/SecureMover#readme
-Issues/Bugs     : https://github.com/DrSmoke/SecureMover/issues
-Changelog       : https://github.com/DrSmoke/SecureMover/blob/main/CHANGELOG.md
+GitHub          : https://github.com/BlackAngel242/SecureMover
+Documentation   : https://github.com/BlackAngel242/SecureMover#readme
+Issues/Bugs     : https://github.com/BlackAngel242/SecureMover/issues
+Changelog       : https://github.com/BlackAngel242/SecureMover/blob/main/CHANGELOG.md
 
 ---
 

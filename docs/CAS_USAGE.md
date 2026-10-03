@@ -440,7 +440,7 @@ SecureMover a déjà aidé **des centaines d'utilisateurs** à :
 **Auteur** : DrSmoke
 **Contact** : 
 **Licence** : MIT (Libre et Gratuit)
-**GitHub** : https://github.com/BlackAngel242/SecureMov2
+**GitHub** : https://github.com/BlackAngel242/SecureMover
 
 ---
 

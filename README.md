@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue.svg)](https://docs.microsoft.com/en-us/powershell/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg)](https://www.microsoft.com/windows)
-[![Version](https://img.shields.io/badge/Version-2.0-orange.svg)](https://github.com/BlackAngel242/SecureMov2/releases)
+[![Version](https://img.shields.io/badge/Version-2.0-orange.svg)](https://github.com/BlackAngel242/SecureMover/releases)
 
 Outil PowerShell pour déplacer, restaurer et sauvegarder les dossiers utilisateurs Windows vers une partition séparée — de manière sécurisée et réversible.
 
@@ -65,7 +65,7 @@ Quand Windows est sur C:, vos données personnelles y sont aussi. Un crash, une 
 ## Installation
 
 ```bash
-git clone https://github.com/BlackAngel242/SecureMov2.git
+git clone https://github.com/BlackAngel242/SecureMover.git
 cd SecureMov2
 ```
 
@@ -181,7 +181,7 @@ git push origin feature/ma-fonctionnalite
 
 **Contributions acceptées** : corrections de bugs, nouvelles fonctionnalités, documentation, traductions, tests.
 
-Pour toute question ou signalement de bug : [GitHub Issues](https://github.com/BlackAngel242/SecureMov2/issues)
+Pour toute question ou signalement de bug : [GitHub Issues](https://github.com/BlackAngel242/SecureMover/issues)
 
 ---
 

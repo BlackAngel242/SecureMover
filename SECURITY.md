@@ -13,8 +13,8 @@
 
 Pour signaler une vulnérabilité de manière responsable :
 
-1. Ouvrez une **issue privée** via [GitHub Security Advisories](https://github.com/BlackAngel242/SecureMov2/security/advisories/new)
-2. Ou contactez l'auteur directement via les [Discussions GitHub](https://github.com/BlackAngel242/SecureMov2/discussions)
+1. Ouvrez une **issue privée** via [GitHub Security Advisories](https://github.com/BlackAngel242/SecureMover/security/advisories/new)
+2. Ou contactez l'auteur directement via les [Discussions GitHub](https://github.com/BlackAngel242/SecureMover/discussions)
 
 ### Informations à fournir
 

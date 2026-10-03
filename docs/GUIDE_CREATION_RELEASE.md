@@ -30,7 +30,7 @@ Préparez ces **3 fichiers** sur votre bureau :
 ### Étape 1 : Aller sur GitHub Releases
 
 1. Ouvrez votre navigateur
-2. Allez sur : https://github.com/BlackAngel242/SecureMov2
+2. Allez sur : https://github.com/BlackAngel242/SecureMover
 3. Cliquez sur l'onglet **"Releases"** (à droite, sous "About")
 4. Cliquez sur **"Create a new release"** (ou "Draft a new release")
 
@@ -100,10 +100,10 @@ Choisissez la version qui vous convient :
 
 ## 📚 Documentation
 
-- 📖 **README** : [Documentation complète](https://github.com/BlackAngel242/SecureMov2/blob/master/README.md)
-- 🚀 **Démarrage rapide** : [QUICKSTART.md](https://github.com/BlackAngel242/SecureMov2/blob/master/QUICKSTART.md)
-- 🎨 **Guide GUI** : [README_GUI.md](https://github.com/BlackAngel242/SecureMov2/blob/master/README_GUI.md)
-- 💡 **Cas d'usage** : [CAS_USAGE.md](https://github.com/BlackAngel242/SecureMov2/blob/master/CAS_USAGE.md)
+- 📖 **README** : [Documentation complète](https://github.com/BlackAngel242/SecureMover/blob/master/README.md)
+- 🚀 **Démarrage rapide** : [QUICKSTART.md](https://github.com/BlackAngel242/SecureMover/blob/master/QUICKSTART.md)
+- 🎨 **Guide GUI** : [README_GUI.md](https://github.com/BlackAngel242/SecureMover/blob/master/README_GUI.md)
+- 💡 **Cas d'usage** : [CAS_USAGE.md](https://github.com/BlackAngel242/SecureMover/blob/master/CAS_USAGE.md)
 
 ---
 
@@ -124,8 +124,8 @@ Get-FileHash SecureMover-GUI.exe -Algorithm SHA256
 ## 📞 Support
 
 - 📱 **)
-- 📧 **Email** : [GitHub Issues](https://github.com/BlackAngel242/SecureMov2/issues)
-- 🐛 **Issues** : [GitHub Issues](https://github.com/BlackAngel242/SecureMov2/issues)
+- 📧 **Email** : [GitHub Issues](https://github.com/BlackAngel242/SecureMover/issues)
+- 🐛 **Issues** : [GitHub Issues](https://github.com/BlackAngel242/SecureMover/issues)
 
 **Langue** : Français 🇫🇷
 
@@ -178,7 +178,7 @@ Get-FileHash SecureMover-GUI.exe -Algorithm SHA256
 
 Après publication, vérifiez que :
 
-1. La release apparaît sur : https://github.com/BlackAngel242/SecureMov2/releases
+1. La release apparaît sur : https://github.com/BlackAngel242/SecureMover/releases
 2. Les 3 fichiers sont téléchargeables
 3. Le badge "Latest" est visible
 4. La description s'affiche correctement
@@ -191,14 +191,14 @@ Après publication, vérifiez que :
 
 **URL de la release** :
 ```
-https://github.com/BlackAngel242/SecureMov2/releases/tag/v2.0.2
+https://github.com/BlackAngel242/SecureMover/releases/tag/v2.0.2
 ```
 
 **URL de téléchargement direct** :
 ```
-https://github.com/BlackAngel242/SecureMov2/releases/download/v2.0.2/SecureMover-GUI.exe
-https://github.com/BlackAngel242/SecureMov2/releases/download/v2.0.2/SecureMover-GUI.ps1
-https://github.com/BlackAngel242/SecureMov2/releases/download/v2.0.2/SecureMover.ps1
+https://github.com/BlackAngel242/SecureMover/releases/download/v2.0.2/SecureMover-GUI.exe
+https://github.com/BlackAngel242/SecureMover/releases/download/v2.0.2/SecureMover-GUI.ps1
+https://github.com/BlackAngel242/SecureMover/releases/download/v2.0.2/SecureMover.ps1
 ```
 
 ### Mettez à jour le README
@@ -206,7 +206,7 @@ https://github.com/BlackAngel242/SecureMov2/releases/download/v2.0.2/SecureMover
 Ajoutez un badge de release dans `README.md` :
 
 ```markdown
-[![Release](https://img.shields.io/github/v/release/BlackAngel242/SecureMov2)](https://github.com/BlackAngel242/SecureMov2/releases/latest)
+[![Release](https://img.shields.io/github/v/release/BlackAngel242/SecureMover)](https://github.com/BlackAngel242/SecureMover/releases/latest)
 ```
 
 ---
