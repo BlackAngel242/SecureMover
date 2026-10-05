@@ -64,7 +64,7 @@ jobs:
           $notes | Out-File release-notes.md -Encoding utf8
 
       - name: Créer la release GitHub
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: |
             SecureMover-*.zip
